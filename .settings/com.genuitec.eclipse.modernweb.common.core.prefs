@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+local-npm-version=4.4.4
+nodejs-version=7.7.3
+prefer-global-node-apps=false
