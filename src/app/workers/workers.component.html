@@ -1,20 +1,28 @@
 <h2>My Employees</h2>
-<div class="employeeList"> 
-       <span class="list-header"> Id</span> 
-        <span class="list-header">Name</span> 
-        <span class="list-header">role</span> 
-        
-        
-</div>
-<ul class="workers">
-  <li *ngFor="let worker of workers"
-    [class.selected]="worker === selectedEmployee"
-    (click)="onSelect(worker)">
-    <span class="badge">{{worker.id}}</span> <span class="name">{{worker.name}} </span> <span class="role">{{worker.role}} </span>
- 
-  </li>
-  
-</ul>
+<table class="employeeList"> 
+<tr>
+       <th class="list-header"> Id</th> 
+        <th class="list-header">Name</th> 
+        <th class="list-header">role</th> 
+ </tr>       
+      
+	<!--  	<ul class="workers">
+			<li *ngFor="let worker of workers"
+				[class.selected]="worker === selectedEmployee"
+				(click)="onSelect(worker)">-->
+				<tr *ngFor="let worker of workers" [class.selected]="worker === selectedEmployee"
+				(click)="onSelect(worker)">
+					<td><span class="badge">{{worker.id}}</span></td>
+					<td><span class="name">{{worker.name}} </span> </td>
+					<td><span class="role">{{worker.role}}</span></td>
+				</tr>
+		   
+		<!-- </li>
+  </ul>-->
+
+</table>
+
+
 
 <div *ngIf="selectedEmployee">
 
