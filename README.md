@@ -2,7 +2,7 @@
 
 WORKERS_SAMPLE
 
- https://dist-qyfncpznqb.now.sh
+ https://dist-mogpfwufen.now.sh
 
 
 Development server
