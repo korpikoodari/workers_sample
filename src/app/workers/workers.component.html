@@ -1,10 +1,19 @@
 <h2>My Employees</h2>
+<div class="employeeList"> 
+       <span class="list-header"> Id</span> 
+        <span class="list-header">Name</span> 
+        <span class="list-header">role</span> 
+        
+        
+</div>
 <ul class="workers">
   <li *ngFor="let worker of workers"
     [class.selected]="worker === selectedEmployee"
     (click)="onSelect(worker)">
-    <span class="badge">{{worker.id}}</span> {{worker.name}}
+    <span class="badge">{{worker.id}}</span> <span class="name">{{worker.name}} </span> <span class="role">{{worker.role}} </span>
+ 
   </li>
+  
 </ul>
 
 <div *ngIf="selectedEmployee">

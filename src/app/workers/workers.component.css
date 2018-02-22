@@ -1,3 +1,28 @@
+.controls div {
+    padding: 10px;
+}
+
+.controls button {
+        margin-left: 10px;
+}
+.employeeList {
+    display: table;
+    width: 70%;
+    padding: 10px;
+}
+.employeeList span {
+    display: table-cell;
+}
+#.employeeList .list-header,
+#.employeeList .list-row {
+#    display: table-row;
+}
+.employeeList .list-header {
+    background: rgb(153,31,61);
+    color: #FFF;
+}
+
+
 /* HeroesComponent's private CSS styles */
 .selected {
   background-color: #CFD8DC !important;
@@ -7,7 +32,7 @@
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width:  70%;
 }
 .workers li {
   cursor: pointer;
@@ -45,4 +70,33 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+.workers .name{
+	  display: inline-block;
+  font-size: small;
+  color: blue;
+  padding: 0.8em 0.7em 0 0.7em;
+ 
+  line-height: 1em;
+  position: relative;
+  left: -15px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;	
+  width:  35%;
+}
+.workers .role{
+	  display: inline-block;
+  font-size: small;
+  color: blue;
+  padding: 0.8em 0.7em 0 0.7em;
+  line-height: 1em;
+  position: relative;
+  left: -25px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;	
+  width:  40%;
 }
